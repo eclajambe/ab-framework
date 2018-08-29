@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="18px" viewBox="0 0 20 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>281231_BarChart_R</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M15.2717391,16.7526087 L19.1847826,16.7526087 L19.1847826,0 L15.2717391,0 L15.2717391,16.7526087 Z M10.4891304,16.5352174 L14.4021739,16.5352174 L14.4021739,3.5048913 L10.4891304,3.5048913 L10.4891304,16.5352174 Z M5.70652174,16.5895652 L9.61956522,16.5895652 L9.61956522,6.97086957 L5.70652174,6.97086957 L5.70652174,16.5895652 Z M0.923913043,16.5352174 L4.83695652,16.5352174 L4.83695652,10.4731522 L0.923913043,10.4731522 L0.923913043,16.5352174 Z" id="path-1"></path>
+    </defs>
+    <g id="Business-&amp;-Technology" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="business-technology/charts-graphs/bar-chart" transform="translate(-2.000000, -3.000000)">
+            <g id="281231_BarChart_R" transform="translate(2.000000, 3.000000)">
+                <g id="gradient-mask">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#008FD3" xlink:href="#path-1"></use>
+                    <g id="colors/sap-blue" mask="url(#mask-2)" fill="#008FD3">
+                        <g transform="translate(-2.000000, -3.000000)" id="color">
+                            <rect x="0" y="0" width="24" height="24"></rect>
+                        </g>
+                    </g>
+                </g>
+                <g id="Group-6" transform="translate(5.652174, 3.491739)" fill="#F0AB00">
+                    <polyline id="Fill-2" fill-opacity="0.4" points="4.83695652 13.0434783 4.83695652 0.0131521739 8.75 0.0131521739 8.75 13.0434783"></polyline>
+                    <polyline id="Fill-4" fill-opacity="0.7" points="0.0543478261 13.0978261 0.0543478261 3.47913043 3.9673913 3.47913043 3.9673913 13.0978261"></polyline>
+                </g>
+                <polyline id="Fill-7" fill="#F0AB00" points="0.923913043 16.5352174 0.923913043 10.4731522 4.83695652 10.4731522 4.83695652 16.5352174"></polyline>
+                <polygon id="Fill-8" fill="#000000" points="0 17.0352174 20 17.0352174 20 16.5352174 0 16.5352174"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

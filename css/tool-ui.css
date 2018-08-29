@@ -1,0 +1,40 @@
+body {
+	overflow: hidden;
+}
+.ab_ui_type {
+	/* Reset margins for UI type */
+	margin: 0;
+}
+#ab_framework {
+	position: relative;
+	overflow: visible;
+	background-color: #efefef;
+	min-height: calc(100vh - 75px);
+}
+#ab_context {
+	position: relative;
+	background-color: #FFF;
+	min-height: calc(100vh - 75px);
+}
+#ab_context:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #FFF;
+    width: 9999px;
+    height: 100%;
+    right: 100%;
+    top: 0;
+}
+.ab_tool_header {
+	display: table;
+}
+.ab_tool_header > div {
+	display: table-cell;
+}
+.ab_tool_header .ab_tool_pictogram img {
+	width: 32px;
+}
+.ab_tool_header .ab_tool_name {
+	padding-left: 8px;
+}
