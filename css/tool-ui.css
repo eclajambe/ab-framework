@@ -1,9 +1,29 @@
+/*------------------------------------------------------------------
+
+    [Table of contents]
+
+    1.0 Global
+        1.1. Typography
+        1.2. Buttons
+    2.0 Utility
+    3.0 AB_Context
+    	3.1 AB_Tool_Title
+    	3.2 AB_Segments
+	4.0 AB_Main
+    5.0 Elements
+    6.0 Footer
+    7.0 Browser-Specific
+    8.0 Responsive
+
+------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+	
+	1.0 Global
+
+------------------------------------------------------------------*/
 body {
 	overflow: hidden;
-}
-.ab_ui_type {
-	/* Reset margins for UI type */
-	margin: 0;
 }
 #ab_framework {
 	position: relative;
@@ -11,6 +31,18 @@ body {
 	background-color: #efefef;
 	min-height: calc(100vh - 75px);
 }
+
+/*------------------------------------------------------------------
+	
+	2.0 Utility
+
+------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+	
+	3.0 AB_Context
+
+------------------------------------------------------------------*/
 #ab_context {
 	position: relative;
 	background-color: #FFF;
@@ -26,15 +58,27 @@ body {
     right: 100%;
     top: 0;
 }
-.ab_tool_header {
-	display: table;
-}
-.ab_tool_header > div {
-	display: table-cell;
-}
-.ab_tool_header .ab_tool_pictogram img {
-	width: 32px;
-}
-.ab_tool_header .ab_tool_name {
-	padding-left: 8px;
-}
+	/*------------------------------------------------------------------
+		3.1 AB_Tool_Title
+	------------------------------------------------------------------*/
+	#ab_tool_title {
+		display: table;
+	}
+	#ab_tool_title > div {
+		display: table-cell;
+	}
+	.ab_tool_pictogram img {
+		width: 32px;
+	}
+	/*------------------------------------------------------------------
+		3.2 AB_Segments
+	------------------------------------------------------------------*/
+	#ab_segments .segment-list {
+		list-style-type: none;
+	}
+	#ab_segments .segment-list li {
+		counter-increment: segment;
+	}
+	#ab_segments .segment-list li:before {
+		content: counter(segment) "";
+	}

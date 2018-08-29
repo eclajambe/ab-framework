@@ -1,3 +1,8 @@
+/* 
+	CSS utility classes for working with an 8px "soft" grid
+	- 8px represents our base unit of measure
+	- The numbers after the dash in the class name represent how much to multiply the base unit by.
+*/
 .mx-auto {
 	margin-right: auto !important;
 	margin-left: auto !important;

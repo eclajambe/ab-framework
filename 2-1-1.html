@@ -20,6 +20,7 @@
   <link href="/sites/all/modules/custom_concur/concur_startup/js/local_scripts/quiz_builder/css/quiz_builder.css?pe4q5u" media="all" rel="stylesheet" type="text/css">
   <link href="https://www.concur.com/sites/default/files/css/css_VLLWQ1ibw-oLsCpwDHOChi_t8YKe_fXhQbjtA0y1ki0.css" media="all" rel="stylesheet" type="text/css">
   <link href="https://www.concur.com/sites/default/files/css/css_CQ93takLLQoJJndtwnLWmIt8Vp8x0je0hVVzZ9Ge3rA.css" media="all" rel="stylesheet" type="text/css">
+  <link href="css/spacers.css" media="all" rel="stylesheet" type="text/css">
   <link href="css/tool-ui.css" media="all" rel="stylesheet" type="text/css"><!--[if lt IE 9]>
   <!--[if lt IE 9]>
     <script src="/sites/all/themes/concur7/js/es5-shim.js"></script>
@@ -881,18 +882,27 @@
 	            		
 	            		<section id="ab_context" class="col-sm-4">
 	            			
-	            			<div class="ab_tool_header">
-	            				<div class="ab_tool_pictogram">
+	            			<div id="ab_tool_title">
+	            				
+                      <div class="ab_tool_pictogram">
 	            					<img src="img/281231_BarChart_R.svg" />
-	            				</div>
-	            				<div class="ab_tool_name">
-	            					<h5 class="font-weight-600 ab_ui_type">TEM Assessment</h5>
+	            				</div><!--// .ab_tool_pictogram -->
+	            				
+                      <div class="ab_tool_name pl-1">
+	            					<h5 class="font-weight-600 m-0">TEM Assessment</h5>
 	            				</div><!--// .ab_tool_name -->
-	            			</div><!--// .ab_tool_header -->
 
-	            			<div class="ab_segment_list">
+	            			</div><!--// #ab_tool_title -->
 
-	            			</div><!--// ab_segment_list -->
+	            			<div id="ab_segments">
+                      <ol class="segment-list pl-0">
+                        <li><h5 class="font-weight-600">Manual TEM process</h5></li>
+                        <li><h5 class="font-weight-600">Automated TEM process</h5></li>
+                        <li><h5 class="font-weight-600">Mobile &amp; cloud apps</h5></li>
+                        <li><h5 class="font-weight-600">Platform ecosystems</h5></li>
+                        <li><h5 class="font-weight-600">Predictive processes</h5></li>
+                      </ol><!--// .segment-list -->
+	            			</div><!--// #ab_segments -->
 
 	            		</section><!--// #ab_context -->
 	            		
