@@ -8,7 +8,8 @@
     2.0 Utility
     3.0 AB_Context
     	3.1 AB_Tool_Title
-    	3.2 AB_Segments
+    	3.2 AB_Progress
+    	3.3 AB_Segments
 	4.0 AB_Main
     5.0 Elements
     6.0 Footer
@@ -37,6 +38,9 @@ body {
 	2.0 Utility
 
 ------------------------------------------------------------------*/
+.text-mid-grey {
+	color: #999;
+}
 
 /*------------------------------------------------------------------
 	
@@ -61,17 +65,39 @@ body {
 	/*------------------------------------------------------------------
 		3.1 AB_Tool_Title
 	------------------------------------------------------------------*/
-	#ab_tool_title {
-		display: table;
+	#ab_tool_name,
+	#ab_tool_pictogram {
+		display: inline-block;
+		vertical-align: bottom;
+		line-height: initial;
 	}
-	#ab_tool_title > div {
-		display: table-cell;
+	#ab_tool_pictogram {
+		margin-right: 8px;
 	}
-	.ab_tool_pictogram img {
-		width: 32px;
+	#ab_tool_pictogram img {
+		width: 40px;
 	}
 	/*------------------------------------------------------------------
-		3.2 AB_Segments
+		3.2 AB_Progress
+	------------------------------------------------------------------*/
+	.progress-bar {
+		width: 80%;
+		background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPSd3aGl0ZScgLz4KICA8cmVjdCB4PScwJyB5PScwJyB3aWR0aD0nMycgaGVpZ2h0PSczJyBmaWxsPSdibGFjaycgLz4KPC9zdmc+Cg==");
+		background-size: 3%;
+		border-radius: 1px;
+	}
+	.progress-bar-fill {
+		display: block;
+		height: 16px;
+		background-color: #f0ab00;
+		border-radius: 1px;
+		transition: width 500ms ease-in-out;
+	}	
+	.progress-bar-text {
+		display: inline-block;
+	}
+	/*------------------------------------------------------------------
+		3.3 AB_Segments
 	------------------------------------------------------------------*/
 	#ab_segments .segment-list {
 		list-style-type: none;
@@ -81,4 +107,10 @@ body {
 	}
 	#ab_segments .segment-list li:before {
 		content: counter(segment) "";
+		font-weight: 600;
+		color: #999;
+		margin-right: 16px;
+	}
+	#ab_segments .segment-name {
+		display: inline-block;
 	}
