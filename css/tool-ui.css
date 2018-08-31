@@ -3,7 +3,7 @@
     [Table of contents]
 	
 	0.0 Fonts
-		0.1 Icons
+		0.1 Icon list
     1.0 Global
         1.1. Typography
         1.2. Buttons
@@ -12,6 +12,8 @@
     	3.1 AB_Tool_Title
     	3.2 AB_Progress
     	3.3 AB_Segments
+    		3.3.1 Question count icon
+    		3.3.2 Progression styles
 	4.0 AB_Main
     5.0 Browser-Specific
     6.0 Responsive
@@ -44,12 +46,10 @@
    -moz-osx-font-smoothing: grayscale
 }
 	/*------------------------------------------------------------------
-		0.1 Icons
+		0.1 Icon list
+
+		.ab-question:before { content:'\0041'; }
 	------------------------------------------------------------------*/
-	.ab-question:before{
-		content:'\0041';
-		font-size: 24px;
-	}
 
 
 /*------------------------------------------------------------------
@@ -121,7 +121,9 @@ body {
 		background-color: #999;
 		background-blend-mode: screen;
 		background-size: 7px;
-		border-radius: 1px;				
+		border-radius: 1px;	
+		box-shadow: none;
+		border: none;
 	}
 	#ab_progress_bar::-webkit-progress-bar {
 		background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPSd3aGl0ZScgLz4KICA8cmVjdCB4PScwJyB5PScwJyB3aWR0aD0nMycgaGVpZ2h0PSczJyBmaWxsPSdibGFjaycgLz4KPC9zdmc+Cg==");
@@ -146,28 +148,71 @@ body {
 		counter-increment: segment;
 		position: relative;
 	}
-	.question_count {
-		font-size: 12px;
-		line-height: 12px;
-	}
-	#ab_segments .segment_list li.future_segment,
-	#ab_segments .segment_list li.future_segment:before,
-	#ab_segments .segment_list li.future_segment .question_count {
-		color: #999;
-	}
-	#ab_segments .segment_list li,
-	#ab_segments .segment_list li:before,
-	#ab_segments .segment_list .question_count {
+	#ab_segments .segment_name,
+	#ab_segments li:before,
+	#ab_segments .question_count {
 		font-weight: 600;
 	}
-	#ab_segments .segment_list li:before {
+	#ab_segments li:before {
 		content: counter(segment) "";
 		margin-right: 16px;
 	}
 	#ab_segments .segment_name {
 		display: inline-block;
 	}
-	#ab_segments .segment_list .question_count {
-		position: absolute;
-		right: 16px;
-	}
+		/*------------------------------------------------------------------
+			3.3.1 Question count icon (For icon 
+		------------------------------------------------------------------*/	
+		#ab_segments .question_count {
+			width: 24px;
+			height: 24px;
+			font-size: 12px;
+			line-height: 12px;
+			text-align: center;
+			display: inline-block;
+			position: absolute;
+			right: 16px;
+			padding-bottom: 20px;		
+		}		
+		#ab_segments .question_count:before{
+			content:'\0041';
+			width: 100%;
+			height: 100%;
+			display: block;
+			line-height: 24px;
+			font-size: 24px;
+		}		
+		/*------------------------------------------------------------------
+			3.3.2 Progression styles
+		------------------------------------------------------------------*/	
+		/* Future segment */
+		#ab_segments li.future_segment .segment_name,
+		#ab_segments li.future_segment:before,
+		#ab_segments li.future_segment .question_count {
+			color: #999;
+		}
+		/* Current segment */
+		#ab_segments li.current_segment .segment_name,
+		#ab_segments li.current_segment:before,
+		#ab_segments li.current_segment .question_count {
+			color: #F0AB00;
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
