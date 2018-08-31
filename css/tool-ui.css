@@ -5,6 +5,7 @@
     1.0 Global
     	1.1 Utility
 	2.0 Tools UI
+		2.1 Buttons
 	3.0 Framework UI
 		3.1 AB__Context
 			3.1.1 AB__Tool_Title
@@ -12,7 +13,8 @@
 			3.1.3 AB__Segments
 				3.1.3.1 Icons
 				3.1.3.2 Progression styles
-    4.0 Responsive
+		3.2 AB__Main
+			3.2.1 AB__Callout
 
 ------------------------------------------------------------------*/
 
@@ -32,16 +34,19 @@
 	2.0 Tools UI
 
 ------------------------------------------------------------------*/
-.btn.primary {
-	font-size: 16px;
-	padding: 16px 24px;
-	cursor: pointer;
-}
-.btn.primary .fa,
-.btn.primary .far,
-.btn.primary .fas {
-	margin-left: 16px;
-}
+	/*------------------------------------------------------------------
+		2.1 Buttons
+	------------------------------------------------------------------*/
+	.btn.primary {
+		font-size: 16px;
+		padding: 16px 24px;
+		cursor: pointer;
+	}
+	.btn.primary .fa,
+	.btn.primary .far,
+	.btn.primary .fas {
+		margin-left: 24px;
+	}
 
 /*------------------------------------------------------------------
 	
@@ -256,52 +261,55 @@
 				color: #F0AB00;
 			}
 
-
-/*------------------------------------------------------------------
-	
-	4.0 AB__Main
-
-------------------------------------------------------------------*/
-#ab__main {
-	-webkit-animation: fadeInRight .25s ease-in-out;
-		animation: fadeInRight .25s ease-in-out;
-}
-#ab__main #ab__callout .inner {
-	background-color: #FFF;
-	border: 1px solid #CCC;
-}
+		/*------------------------------------------------------------------
+			3.1.4 AB__Teaser
+		------------------------------------------------------------------*/
+		#ab__teaser {
+			border: 5px solid #CCC;
+			border-image-source: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPSd3aGl0ZScgLz4KICA8cmVjdCB4PScwJyB5PScwJyB3aWR0aD0nMycgaGVpZ2h0PSczJyBmaWxsPSdibGFjaycgLz4KPC9zdmc+Cg==");
+			border-image-repeat: repeat;
+		}
 
 
-
-#ab__callout {
-    background-color: #fff;
-    border: 1px solid #CCC;
-    border-left: 5px solid #0078c9;
-    border-radius: 1px;
-}
-#ab__callout .col.ab__callout-thumbnail img {
-    max-width: 82px;
-    margin: 0;
-}
-#ab__callout .col {
-    display: table-cell;
-    float: none;
-    vertical-align: middle;
-}
-
-@media (min-width: 768px) {
-	#ab__callout {
-		display: table;
+	/*------------------------------------------------------------------
+		3.2 AB__Main
+	------------------------------------------------------------------*/
+	#ab__main {
+		-webkit-animation: fadeInRight .25s ease-in-out;
+			animation: fadeInRight .25s ease-in-out;
 	}
-	#ab__callout .col {
-		display: table-cell;
-		float: none;
-		vertical-align: middle;
-	}	
-	#ab__callout .col.ab__callout-content {
-		text-align: left;
-	}
-}
+
+		/*------------------------------------------------------------------
+			3.2.1 AB__Callout
+		------------------------------------------------------------------*/	
+		#ab__callout {
+			background-color: #fff;
+			border: 1px solid #CCC;
+			border-left: 5px solid #0078c9;
+			border-radius: 1px;
+		}
+		#ab__callout .col.ab__callout-thumbnail img {
+			max-width: 82px;
+			margin: 0;
+		}
+		#ab__callout .col {
+			display: table-cell;
+			float: none;
+			vertical-align: middle;
+		}
+		@media (min-width: 768px) {
+			#ab__callout {
+				display: table;
+			}
+			#ab__callout .col {
+				display: table-cell;
+				float: none;
+				vertical-align: middle;
+			}	
+			#ab__callout .col.ab__callout-content {
+				text-align: left;
+			}
+		}
 
 
 
