@@ -881,7 +881,7 @@
           	<div class="container">
 	          	<div class="row">
 	            		
-	            		<section id="ab__context" class="col-sm-4 pt-7">
+	            		<section id="ab__context" class="col-sm-4 pt-5">
 	            			<div class="col-sm-12">
 	            			
                       <div id="ab__tool_title" class="mb-4">
@@ -890,7 +890,8 @@
   	            			</div><!--// #ab__tool_title -->
 
                       <div id="ab__progress" class="mb-4">
-                        <progress id="ab__progress_bar" class="overall_progress" max="100" value="70"></progress>
+                        <progress id="ab__progress_bar" class="overall_progress" max="100" value="0"></progress>
+                        <span id="ab__progress_text">0<span class="ab__progress_percent">&#37;</span></span>
                       </div><!--// #ab__progress -->
 
   	            			<div id="ab__segments">
@@ -938,20 +939,30 @@
                     </div><!--// .col-sm-12 -->
 	            		</section><!--// #ab__context -->
 	            		
-	            		<section id="ab__main" class="question_content col-sm-7 col-sm-offset-1 pt-14">
+	            		<section id="ab__main" class="ab__question_screen col-sm-7 col-sm-offset-1 pt-12">
                     
-                    <div class="ab__screen_content">
-  	            			<h1 class="m-0 mb-3">Manual TEM process</h1>
+                    <div id="ab__content" class="mb-3">
+                      <h1 class="m-0 mb-3">Manual TEM process</h1>
                       <p class="lg">Many organizations start by manually entering expenses into an Excel spreadsheet, while taping (or stapling) receipts to physical expense reports—processes that are both time-consuming and prone to errors.</p>
-                      <div class="ab___callout">
-                    </div><!--// .ab__screen_content -->
-                    
-                    <div class="ab__screen_action">
-                    </div><!--// .ab__screen_action -->
+                    </div><!--// .ab__content -->
 
-                    <div class="ab__screen_navigation">
-                      <a href="2-1-2.html" class="btn primary tools_ui">Proceed to level 1 <i class="fas fa-arrow-right"></i></a>
-                    </div><!--// .ab__screen_navigation -->
+                    <div id="ab__callout" class="mb-4">
+                      <div class="ab__callout-thumbnail col col-sm-1 text-center">
+                        <img src="img/281224_Clock_R.svg" />
+                      </div>
+
+                      <div class="ab__callout-content col col-sm-11">
+                        <h4>With mobile and cloud-based solutions from Concur, you can benefit from <span class="text-gold font-weight-600">54% fewer receipts lost.</span></h4>
+                      </div>
+                    </div><!--// #ab__callout -->
+                    
+                    <div id="ab__screen_action mb-4">
+                    </div><!--// #ab__screen_action -->
+
+                    <div id="ab__screen_nav">
+                      <!--<a href="#" class="mr-5"><i class="fas fa-arrow-left"></i> Back</a>-->
+                      <a href="2-1-2.html" class="btn primary tools_ui">Proceed <i class="fas fa-arrow-right"></i></a>
+                    </div><!--// #ab__screen_nav -->
 
 	            		</section><!--// #ab__main-->            		
 
