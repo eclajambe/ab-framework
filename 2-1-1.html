@@ -20,6 +20,8 @@
   <link href="/sites/all/modules/custom_concur/concur_startup/js/local_scripts/quiz_builder/css/quiz_builder.css?pe4q5u" media="all" rel="stylesheet" type="text/css">
   <link href="https://www.concur.com/sites/default/files/css/css_VLLWQ1ibw-oLsCpwDHOChi_t8YKe_fXhQbjtA0y1ki0.css" media="all" rel="stylesheet" type="text/css">
   <link href="https://www.concur.com/sites/default/files/css/css_CQ93takLLQoJJndtwnLWmIt8Vp8x0je0hVVzZ9Ge3rA.css" media="all" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <link href="css/spacers.css" media="all" rel="stylesheet" type="text/css">
   <link href="css/tool-ui.css" media="all" rel="stylesheet" type="text/css"><!--[if lt IE 9]>
   <!--[if lt IE 9]>
@@ -875,52 +877,83 @@
  
 
 <!-- AB Framework code STARTS here -->         
-          <div id="ab_framework">
+          <div id="ab__framework">
           	<div class="container">
 	          	<div class="row">
 	            		
-	            		<section id="ab_context" class="col-sm-4 pt-7">
+	            		<section id="ab__context" class="col-sm-4 pt-7">
 	            			<div class="col-sm-12">
 	            			
-                      <div id="ab_tool_title" class="mb-4">
-                          <span id="ab_tool_pictogram"><img src="img/281231_BarChart_R.svg" /></span>
-  	            					<h5 id="ab_tool_name" class="font-weight-600 m-0">TEM Assessment</h5>
-  	            			</div><!--// #ab_tool_title -->
+                      <div id="ab__tool_title" class="mb-4">
+                          <span id="ab__tool_pictogram"><img src="img/281231_BarChart_R.svg" /></span>
+  	            					<h5 id="ab__tool_name" class="font-weight-600 m-0">TEM Assessment</h5>
+  	            			</div><!--// #ab__tool_title -->
 
-                      <div id="ab_progress" class="mb-4">
-                        <progress id="ab_progress_bar" class="overall_progress" max="100" value="70"></progress>
-                      </div><!--// #ab_progress -->
+                      <div id="ab__progress" class="mb-4">
+                        <progress id="ab__progress_bar" class="overall_progress" max="100" value="70"></progress>
+                      </div><!--// #ab__progress -->
 
-  	            			<div id="ab_segments">
+  	            			<div id="ab__segments">
                         <ol class="segment_list pl-0">
-                          <li class="current_segment mb-2"><h5 class="segment_name m-0">Manual TEM process</h5><span class="question_count ab-question">3</span></li>
-                          <li class="future_segment mb-2"><h5 class="segment_name m-0">Automated TEM process</h5><span class="question_count ab-question">3</span></li>
-                          <li class="future_segment mb-2"><h5 class="segment_name m-0">Mobile &amp; cloud apps</h5><span class="question_count ab-question">3</span></li>
-                          <li class="future_segment mb-2"><h5 class="segment_name m-0">Platform ecosystems</h5><span class="question_count ab-question">3</span></li>
-                          <li class="future_segment mb-2"><h5 class="segment_name m-0">Predictive processes</h5><span class="question_count ab-question">0</span></li>
+                          <li class="completed_segment mb-2">
+                            <h5 class="segment_name m-0">Manual TEM process</h5>
+                            <span class="question_count">
+                              <i class="fas fa-check-circle"></i>
+                            </span>
+                          </li>
+                          <li class="current_segment mb-2">
+                            <h5 class="segment_name m-0">Automated TEM process</h5>
+                            <span class="question_count">
+                              <i class="far fa-comment-alt"></i>
+                              <span class="question_number">3</span>
+                            </span>
+                          </li> 
+                          <li class="future_segment mb-2">
+                            <h5 class="segment_name m-0">Mobile &amp; cloud apps</h5>
+                            <span class="question_count">
+                              <i class="far fa-comment-alt"></i>
+                              <span class="question_number">3</span>
+                            </span>
+                          </li> 
+                          <li class="future_segment mb-2">
+                            <h5 class="segment_name m-0">Platform ecosystems</h5>
+                            <span class="question_count">
+                              <i class="far fa-comment-alt"></i>
+                              <span class="question_number">3</span>
+                            </span>
+                          </li> 
+                          <li class="future_segment mb-2">
+                            <h5 class="segment_name m-0">Predictive processes</h5>
+                            <span class="question_count">
+                              <i class="far fa-comment-alt"></i>
+                              <span class="question_number">0</span>
+                            </span>
+                          </li> 
                         </ol><!--// .segment-list -->
-  	            			</div><!--// #ab_segments -->
+  	            			</div><!--// #ab__segments -->
 
-                      <div id="ab_teaser">
-                      </div><!--// #ab_teaser -->                      
+                      <div id="ab__teaser">
+                      </div><!--// #ab__teaser -->                      
 
                     </div><!--// .col-sm-12 -->
-	            		</section><!--// #ab_context -->
+	            		</section><!--// #ab__context -->
 	            		
-	            		<section id="ab_main" class="question_content col-sm-7 col-sm-offset-1 pt-14">
+	            		<section id="ab__main" class="question_content col-sm-7 col-sm-offset-1 pt-14">
                     
-                    <div class="ab_screen_content">
+                    <div class="ab__screen_content">
   	            			<h1 class="m-0 mb-3">Manual TEM process</h1>
                       <p class="lg">Many organizations start by manually entering expenses into an Excel spreadsheet, while taping (or stapling) receipts to physical expense reports—processes that are both time-consuming and prone to errors.</p>
-                    </div><!--// .ab_screen_content -->
+                      <div class="ab___callout">
+                    </div><!--// .ab__screen_content -->
                     
-                    <div class="ab_screen_action">
-                    </div><!--// .ab_screen_action -->
+                    <div class="ab__screen_action">
+                    </div><!--// .ab__screen_action -->
 
-                    <div class="ab_screen_navigation">
-                    </div><!--// .ab_screen_navigation -->
+                    <div class="ab__screen_navigation">
+                      <a href="2-1-2.html" class="btn primary tools_ui">Proceed to level 1 <i class="fas fa-arrow-right"></i></a>
+                    </div><!--// .ab__screen_navigation -->
 
-	            		</section><!--// #ab_main-->            		
+	            		</section><!--// #ab__main-->            		
 
 	            	</div><!--// .row -->
 	          </div><!--// .container -->
