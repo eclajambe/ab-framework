@@ -13,7 +13,7 @@
   <meta content="summary_large_image" name="twitter:card">
   <meta content="@concur" name="twitter:site">
   <meta content="US Expense Policy Builder Quiz" name="twitter:title">
-  <title>2.1.1 | TEM Assessment</title>
+  <title>2.1.2 | TEM Assessment</title>
   <link href="https://www.concur.com/sites/default/files/css/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4.css" media="all" rel="stylesheet" type="text/css">
   <link href="https://www.concur.com/sites/default/files/css/css_vGwB2DvJ9MiLLgl-vLgEB8Cuj3FDZ_bKG-tkj5Mjbz4.css" media="all" rel="stylesheet" type="text/css">
   <link href="https://www.concur.com/sites/default/files/css/css_-toka7QJeDQZ1oJ4LMiaw3PzOsQpT8bD5E_uNn3vo2o.css" media="all" rel="stylesheet" type="text/css">
@@ -890,8 +890,8 @@
   	            			</div><!--// #ab__tool_title -->
 
                       <div id="ab__progress" class="mb-4">
-                        <progress id="ab__progress_bar" class="overall_progress" max="100" value="0"></progress>
-                        <span id="ab__progress_text">0<span class="ab__progress_percent">&#37;</span></span>
+                        <progress id="ab__progress_bar" class="overall_progress" max="100" value="6"></progress>
+                        <span id="ab__progress_text">6<span class="ab__progress_percent">&#37;</span></span>
                       </div><!--// #ab__progress -->
 
   	            			<div id="ab__segments">
@@ -955,35 +955,38 @@
                         <h5 class="m-0 motion-left motion-delay-5">View results upon completion
                           <span class="teaser_icon"><i class="far fa-chart-bar"></i></span>
                         </h5>
-                      </div><!--// #ab__teaser -->                   
+                      </div><!--// #ab__teaser -->                    
 
                     </div><!--// .col-sm-12 -->
 	            		</section><!--// #ab__context -->
 	            		
 	            		<section id="ab__main" class="ab__question_screen col-sm-7 col-sm-offset-1 pt-11">
                     
-                    <div id="ab__content" class="mb-3 motion-right motion-delay-0">
-                      <h1 class="m-0 mb-3">Manual TEM process</h1>
-                      <p class="lg mb-0">Many organizations start by manually entering expenses into an Excel spreadsheet, while taping (or stapling) receipts to physical expense reports — processes that are both time-consuming and prone to errors.</p>
+                    <div id="ab__content" class="mb-5 motion-right motion-delay-0">
+                      <h1 class="m-0">Does your TEM system reflect company policies?</h1>
                     </div><!--// .ab__content -->
-
-                    <div id="ab__callout" class="mb-5 motion-right motion-delay-1">
-                      <div class="ab__callout-thumbnail col col-sm-1 text-center">
-                        <img src="img/281224_Clock_R.svg" />
-                      </div>
-
-                      <div class="ab__callout-content col col-sm-11">
-                        <p class="lg py-2 m-0">With mobile and cloud-based solutions from Concur, you can benefit from <span class="text-gold font-weight-600">54% fewer receipts lost.</span></p>
-                      </div>
-                    </div><!--// #ab__callout -->
                     
-                    <div id="ab__user_input" class="mb-5 motion-right motion-delay-2">
-                      <!-- Nothing for this screen -->
+                    <div id="ab__user_input" class="mb-5 motion-right motion-delay-1">
+                      <div class="input_container">
+                        <ul class="choice_list">
+                          <li data-value="0" class="choice boolean">
+                            <span>Yes</span>
+                          </li>
+                          <li data-value="1" class="choice boolean">
+                            <span>No</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <script>
+                        jQuery('.choice').click(function() {
+                          jQuery(this).toggleClass('selected');
+                        });  
+                      </script>
                     </div><!--// #ab__user_input -->
 
-                    <div id="ab__screen_nav" class="motion-right motion-delay-3">
-                      <!--<a href="#" class="mr-5"><i class="fas fa-arrow-left"></i> Back</a>-->
-                      <a href="2-1-2.html" class="btn primary tools_ui">Proceed <i class="fas fa-arrow-right"></i></a>
+                    <div id="ab__screen_nav" class="motion-right motion-delay-2">
+                      <a href="2-1-1.html" class="mr-5"><i class="fas fa-arrow-left"></i> Back</a>
+                      <!--<a href="2-1-1.html" class="btn primary tools_ui">Proceed <i class="fas fa-arrow-right"></i></a>-->
                     </div><!--// #ab__screen_nav -->
 
 	            		</section><!--// #ab__main-->            		
