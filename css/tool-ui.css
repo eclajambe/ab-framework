@@ -6,6 +6,7 @@
     	1.1 Utility
 	2.0 Tools UI
 		2.1 Buttons
+		2.2 Dividers
 	3.0 Framework UI
 		3.1 AB__Context
 			3.1.1 AB__Tool_Title
@@ -28,7 +29,7 @@
 	------------------------------------------------------------------*/
 	.text-gold {
 		color: #F0AB00;
-	}
+	}	
 /*------------------------------------------------------------------
 	
 	2.0 Tools UI
@@ -46,7 +47,19 @@
 	.btn.primary .far,
 	.btn.primary .fas {
 		margin-left: 24px;
-	}
+	}	
+	/*------------------------------------------------------------------
+		2.2 Dividers
+	------------------------------------------------------------------*/	
+	.dotted-line {
+		background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPSd3aGl0ZScgLz4KICA8cmVjdCB4PScwJyB5PScwJyB3aWR0aD0nMycgaGVpZ2h0PSczJyBmaWxsPSdibGFjaycgLz4KPC9zdmc+Cg==");
+		background-color: #999;
+		background-blend-mode: screen;
+		background-size: 7px;			
+		display: block;
+		height: 2px;
+		width: 100%;
+	}	
 
 /*------------------------------------------------------------------
 	
@@ -286,12 +299,27 @@
 		/*------------------------------------------------------------------
 			3.1.4 AB__Teaser
 		------------------------------------------------------------------*/
-		#ab__teaser {
-			border: 5px solid #CCC;
-			border-image-source: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPSd3aGl0ZScgLz4KICA8cmVjdCB4PScwJyB5PScwJyB3aWR0aD0nMycgaGVpZ2h0PSczJyBmaWxsPSdibGFjaycgLz4KPC9zdmc+Cg==");
-			border-image-repeat: repeat;
+		#ab__teaser h5 {
+			position: relative;
+			font-weight: 600;
+			color: #CCC;
 		}
-
+		#ab__teaser .teaser_icon {
+			width: 24px;
+			height: 24px;
+			font-size: 14px;
+			line-height: 1;
+			text-align: center;
+			display: inline-block;
+			position: absolute;
+			left: 90%;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+		#ab__teaser .teaser_icon .far {
+			font-size: 24px;
+			color: #CCC;		
+		}
 
 	/*------------------------------------------------------------------
 		3.2 AB__Main
