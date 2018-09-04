@@ -206,20 +206,22 @@
 		}
 		#ab__segments .segment_name,
 		#ab__segments li:before,
-		#ab__segments .question_count {
+		#ab__segments .segment_icon {
 			font-weight: 600;
 		}
-		/*#ab__segments li:before {
-			content: counter(segment) "";
-			margin-right: 8px;
-		}*/
 		#ab__segments .segment_name {
 			display: inline-block;
 		}
 			/*------------------------------------------------------------------
-				3.1.3.1 Question count icon
+				3.1.3.1 Icons
 			------------------------------------------------------------------*/	
-			#ab__segments .question_count {
+			#ab__segments .segment.current .segment_name:before {
+				content: '\f054';
+				font-family: 'FontAwesome';
+				font-size: 14px;
+				margin-right: 4px;
+			}
+			#ab__segments .segment_icon {
 				width: 24px;
 				height: 24px;
 				font-size: 14px;
@@ -231,19 +233,21 @@
 				top: 50%;
 				transform: translateY(-50%);			
 			}
-			#ab__segments .question_count .fas,
-			#ab__segments .question_count .far {			
+			#ab__segments .segment_icon .fas,
+			#ab__segments .segment_icon .far {			
 				font-size: 24px;
-			}
-			#ab__segments .question_count .question_number {			
 				position: absolute;
 				top: 50%;
 				left: 50%;
 				transform: translate(-50%, -50%);
-				padding-bottom: 4px;
 			}
-			#ab__segments .question_count .fas.fa-check {
+			#ab__segments .segment_questions {
+				position: relative;
+				top: 3px;
+			}
+			#ab__segments .segment_icon .fas.fa-check {
 				position: absolute;
+				z-index: 10;
 				top: 50%;
 				color: #FFF;
 				font-size: 12px;
@@ -256,25 +260,28 @@
 				3.1.3.2 Progression styles
 			------------------------------------------------------------------*/	
 			/* Future segment */
-			#ab__segments li.future_segment .segment_name,
-			#ab__segments li.future_segment:before,
-			#ab__segments li.future_segment .question_count {
+			#ab__segments li.segment.future .segment_name,
+			#ab__segments li.segment.future:before,
+			#ab__segments li.segment.future .segment_icon {
 				color: #CCC;
 			}
 			/* Current/Completed segment */
-			#ab__segments li.current_segment .segment_name,
-			#ab__segments li.current_segment:before,
-			#ab__segments li.current_segment .question_count,		
-			#ab__segments li.completed_segment .segment_name,
-			#ab__segments li.completed_segment:before,
-			#ab__segments li.completed_segment .question_count {
+			#ab__segments li.segment.current .segment_name,
+			#ab__segments li.segment.current:before,
+			#ab__segments li.segment.current .segment_icon,		
+			#ab__segments li.segment.completed .segment_name,
+			#ab__segments li.segment.completed:before,
+			#ab__segments li.segment.completed .segment_icon {
 				color: #F0AB00;
 			}
-			#ab__segments li.completed_segment .segment_name,
-			#ab__segments li.completed_segment:before,
-			#ab__segments li.completed_segment .question_count {
-				opacity: 0.5;
-			}			
+			/* Change icon based on segment status */
+			#ab__segments li.segment.future .fas.fa-comment-alt,
+			#ab__segments li.segment.future .fa-check,
+			#ab__segments li.segment.current .fa-check,
+			#ab__segments li.segment.current .fas.fa-comment-alt,
+			#ab__segments li.segment.completed .segment_questions {
+				display: none;
+			}
 
 		/*------------------------------------------------------------------
 			3.1.4 AB__Teaser
@@ -290,8 +297,8 @@
 		3.2 AB__Main
 	------------------------------------------------------------------*/
 	#ab__main {
-		-webkit-animation: fadeInRight .25s ease-in-out;
-			animation: fadeInRight .25s ease-in-out;
+		-webkit-animation: fadeInRight .5s ease-in-out;
+			animation: fadeInRight .5s ease-in-out;		
 	}
 
 		/*------------------------------------------------------------------
