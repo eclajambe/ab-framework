@@ -165,7 +165,7 @@ a {
 		position: relative;
 		background-color: #FFF;
 	}
-	@media (min-width: 768px) {
+	@media (min-width: 992px) {
 		#ab__context {
 			min-height: calc(100vh - 75px);
 			border-right: 1px solid #CCC;
@@ -378,7 +378,7 @@ a {
 			float: none;
 			vertical-align: middle;
 		}
-		@media (min-width: 768px) {
+		@media (min-width: 992px) {
 			#ab__callout {
 				display: table;
 			}
