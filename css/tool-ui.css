@@ -156,10 +156,12 @@ a {
 	position: relative;
 	overflow: visible;
 	background-color: #EFEFEF;
+	padding-bottom: 120px;
 }
 @media (min-width: 992px) {
 	#ab__framework {
 		min-height: calc(100vh - 75px);
+		padding-bottom: 0;
 	}
 }
 	/*------------------------------------------------------------------
@@ -168,6 +170,8 @@ a {
 	#ab__context {
 		position: relative;
 		background-color: #FFF;
+		padding-top: 24px;
+		padding-bottom: 24px;
 	}
 	#ab__context:before {
 		content: '';
@@ -184,6 +188,7 @@ a {
 			min-height: calc(100vh - 75px);
 			border-right: 1px solid #CCC;
 			padding-left: 30px;
+			padding-top: 32px;
 		}
 		#ab__context:before {
 			content: '';
@@ -274,6 +279,7 @@ a {
 			counter-increment: segment;
 			position: relative;
 			display: block;	
+			margin-bottom: 0;
 		}				
 		#ab__segments .segment_name,
 		#ab__segments li:before,
@@ -283,13 +289,18 @@ a {
 		#ab__segments .segment_name {
 			display: inline-block;
 		}
+		@media (min-width: 992px) {
+			#ab__segments .segment_list li {
+				margin-bottom: 16px;
+			}
+		}
 			/*------------------------------------------------------------------
 				3.1.3.1 Icons
 			------------------------------------------------------------------*/	
 			#ab__segments .segment.current .segment_name:before {
-				content: '\f054';
-				font-family: 'FontAwesome';
-				font-size: 14px;
+				content: '\f0da';
+				font-family: 'Font Awesome 5 Free';
+				font-size: 16px;
 				margin-right: 4px;
 			}
 			#ab__segments .segment_icon {
@@ -398,11 +409,20 @@ a {
 	/*------------------------------------------------------------------
 		3.2 AB__Main
 	------------------------------------------------------------------*/
+	#ab__main {
+		padding-top: 24px;
+	}
 	@media (min-width: 992px) { 
 		#ab__main {
 			padding-top: 88px;
 		}
 	}
+		/*------------------------------------------------------------------
+			3.2.1 AB__Callout
+		------------------------------------------------------------------*/
+		#ab__main .screen_counter {
+			color: #F0AB00;
+		}
 		/*------------------------------------------------------------------
 			3.2.1 AB__Callout
 		------------------------------------------------------------------*/	
@@ -465,7 +485,7 @@ a {
 		}
 		#ab__user_input .boolean.selected span:after {
 			content: '\f058';
-			font-family: 'FontAwesome';
+			font-family: 'Font Awesome 5 Free';
 			color: #F0AB00;
 			padding-left: 24px;
 		}		
@@ -473,7 +493,21 @@ a {
 			display: block;
 			line-height: 70px;
 		}
-
+		@media (max-width: 767px) {
+			#ab__user_input ul {
+				display: flex;
+				align-items: center;
+				align-content: center;
+				justify-content: space-between;
+			}
+			#ab__user_input ul li {
+			    flex: 0 1 48%;
+			}
+			#ab__user_input .boolean {
+				width: 50%;
+				margin-right: 0;
+			}
+		}
 
 
 
