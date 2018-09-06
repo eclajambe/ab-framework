@@ -43,8 +43,7 @@
 	position: relative;
 	background-color: #FFF;
 	padding-top: 24px;
-	padding-bottom: 24px;
-	border-bottom: 1px solid #CCC;			
+	padding-bottom: 24px;			
 }
 #ab__context:before {
 	content: '';
@@ -54,13 +53,13 @@
 	width: 9999px;
 	height: 100%;
 	background: #FFF;
+	border-bottom: 1px solid #CCC;
 	z-index: -1;
 }
 @media (min-width: 992px) {
 	#ab__context {
 		min-height: calc(100vh - 75px);
 		border-right: 1px solid #CCC;
-		border-bottom: none;	
 		padding-left: 30px;
 		padding-top: 32px;
 	}
@@ -69,6 +68,7 @@
 		display: block;
 		position: absolute;
 		background-color: #FFF;
+		border-bottom: none;
 		width: 9999px;
 		height: 100%;
 		right: 100%;
@@ -357,10 +357,12 @@
 		3.2 AB__User_Input
 	------------------------------------------------------------------*/		
 	#ab__user_input ul {
+		float: left;
 		padding-left: 0;
 		margin-bottom: 0;
 	}
 	#ab__user_input .choice {
+		float: left;
 		font-size: 22px;
 		height: 70px;
 		line-height: 70px;
@@ -398,19 +400,19 @@
 	}
 	@media (max-width: 767px) {
 		#ab__user_input ul {
+			float: none;
 			display: flex;
 			align-items: center;
 			align-content: center;
 			justify-content: space-between;
 		}
 		#ab__user_input ul li {
+			float: none;
 		    flex: 0 1 48%;
 		}
 		#ab__user_input .choice {
 			width: 50%;
 			margin-right: 0;
-			height: 60px;
-			line-height: 60px;
 		}
 	}
 
