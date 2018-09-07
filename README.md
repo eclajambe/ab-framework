@@ -34,9 +34,9 @@ Ex: A user is on question 8 of a tool with 16 total question screens, is 43% com
 
 Each list item in the #ab__segment_list should have only *one* of the following status classes applied at any given time, to give users an indication of which segment they're currently on: 
 
-* **Future** (.future) - Use this class to indicate any segments that have not yet been visited.
-* **Current** (.current) - Use this class to indicate the segment the user is currently viewing.
-* **Completed** (.completed) - Use this class to indicate any segemnts that users have already completed.
+* **Future** (.future) - Use this class to indicate any segments users have not yet been visited.
+* **Current** (.current) - Use this class to indicate the segment users are currently viewing.
+* **Completed** (.completed) - Use this class to indicate any segments users have already completed.
 
 Classes should be added/removed dynamically, as users progress through the test.
 
