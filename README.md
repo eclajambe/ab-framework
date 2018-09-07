@@ -45,7 +45,7 @@ Classes should be added/removed dynamically, as users progress through the test.
 
 ### #ab__user_input
 
-The only bit of JS used in this code is found here, and is used only to demonstrate how it should look when a user clicks on a choice to make their selection.  
+The only bit of JS incluced in this code (outside inherited page JS) is found here, and is used only to demonstrate how it should look when a user clicks on a choice to make their selection.  
 
 For this type of input (.boolean), making a choice of either "Yes" or "No" should automatically advance the user to the next screen, after a slight delay (explained below). Other inputs in the future - text input, for instance - might require users to click a button after their input is complete. 
 
