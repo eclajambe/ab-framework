@@ -38,7 +38,7 @@ Each list item in the #ab__segment_list should have only *one* of the following 
 * **Current** (.current) - Use this class to indicate the segment the user is currently viewing.
 * **Completed** (.completed) - Use this class to indicate any segemnts that users have already completed.
 
-As the user progresses throughout the test, classes should be added/removed dynamically, as necessary. 
+Classes should be added/removed dynamically, as users progress through the test.
 
 
 ## Question Input
