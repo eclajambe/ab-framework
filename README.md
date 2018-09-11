@@ -1,4 +1,4 @@
-# A/B Framework
+# Assessment/Builder Framework
 
 This repository contains HTML/CSS for the A/B framework. Content used in this repository is used for demonstration purposes only and should not be considered final.
 
