@@ -14,6 +14,9 @@
 	3.0 AB__Main
 		3.1 AB__Callout
 		3.2 AB__User_Input
+	4.0 Results page
+		4.1 AB__Results_Visual
+
 
 ------------------------------------------------------------------*/	
 
@@ -22,14 +25,14 @@
 	1.0 Framework UI
 
 ------------------------------------------------------------------*/
-#ab__framework {
+#ab__framework.ab__question_screen {
 	position: relative;
 	overflow: visible;
 	background-color: #EFEFEF;
 	padding-bottom: 120px;
 }
 @media (min-width: 992px) {
-	#ab__framework {
+	#ab__framework.ab__question_screen {
 		min-height: calc(100vh - 75px);
 		padding-bottom: 0;
 	}
@@ -416,10 +419,17 @@
 		}
 	}
 
+/*------------------------------------------------------------------
+	
+	4.0 Results page
 
-
-
-
+------------------------------------------------------------------*/
+	/*------------------------------------------------------------------
+		4.1 AB__Results_Visual
+	------------------------------------------------------------------*/
+	#ab__result #result_visual {
+		max-width: 219px; /* Half of @2x width */
+	}
 
 
 
