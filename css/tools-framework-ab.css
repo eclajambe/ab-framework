@@ -25,14 +25,14 @@
 	1.0 Framework UI
 
 ------------------------------------------------------------------*/
-#ab__framework.ab__question_screen {
+.ab__framework.ab__question_screen {
 	position: relative;
 	overflow: visible;
 	background-color: #EFEFEF;
 	padding-bottom: 120px;
 }
 @media (min-width: 992px) {
-	#ab__framework.ab__question_screen {
+	.ab__framework.ab__question_screen {
 		min-height: calc(100vh - 75px);
 		padding-bottom: 0;
 	}
@@ -42,13 +42,13 @@
 	2.0 AB__Context
 
 ------------------------------------------------------------------*/
-#ab__context {
+.ab__context {
 	position: relative;
 	background-color: #FFF;
 	padding-top: 24px;
 	padding-bottom: 24px;			
 }
-#ab__context:before {
+.ab__context:before {
 	content: '';
 	position: absolute;
 	left: -999px;
@@ -60,13 +60,13 @@
 	z-index: -1;
 }
 @media (min-width: 992px) {
-	#ab__context {
+	.ab__context {
 		min-height: calc(100vh - 75px);
 		border-right: 1px solid #CCC;
 		padding-left: 30px;
 		padding-top: 32px;
 	}
-	#ab__context:before {
+	.ab__context:before {
 		content: '';
 		display: block;
 		position: absolute;
@@ -83,41 +83,41 @@
 	/*------------------------------------------------------------------
 		2.1 AB__Tool_Title
 	------------------------------------------------------------------*/
-	#ab__tool_title h5 {
+	.ab__tool_title h5 {
 		line-height: 1;
 		color: #333;
 	}
-	#ab__tool_title {
+	.ab__tool_title {
 		margin-bottom: 24px;
 	}
-	#ab__tool_name,
-	#ab__tool_pictogram {
+	.ab__tool_name,
+	.ab__tool_pictogram {
 		display: inline-block;
 		vertical-align: bottom;
 		line-height: initial;
 	}
-	#ab__tool_pictogram {
+	.ab__tool_pictogram {
 		margin-right: 8px;
 	}
-	#ab__tool_pictogram img {
+	.ab__tool_pictogram img {
 		width: 24px;
 	}
 	@media (min-width: 992px) {
-		#ab__tool_title {
+		.ab__tool_title {
 			margin-bottom: 32px;
 		}	
-		#ab__tool_pictogram img {
+		.ab__tool_pictogram img {
 			width: 32px;
 		}			
 	}	
 	/*------------------------------------------------------------------
 		2.2 AB__Progress
 	------------------------------------------------------------------*/
-	#ab__progress {
+	.ab__progress {
 		position: relative;
 		margin-bottom: 24px;
 	}
-	#ab__progress_bar {
+	.ab__progress_bar {
 		-webkit-appearance: none;
 		-moz-appearance: none;
 		appearance: none;	
@@ -130,22 +130,22 @@
 		box-shadow: none;
 		border: none;			
 	}
-	#ab__progress_bar::-webkit-progress-bar {
+	.ab__progress_bar::-webkit-progress-bar {
 		background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPSd3aGl0ZScgLz4KICA8cmVjdCB4PScwJyB5PScwJyB3aWR0aD0nMycgaGVpZ2h0PSczJyBmaWxsPSdibGFjaycgLz4KPC9zdmc+Cg==");
 		background-color: #999;
 		background-blend-mode: screen;
 		background-size: 7px;
 		border-radius: 1px;			
 	}
-	#ab__progress_bar::-webkit-progress-value {
+	.ab__progress_bar::-webkit-progress-value {
 		background-color: #F0AB00;
 		transition: width .4s cubic-bezier(0.45, 0.05, 0.55, 0.95);
 	}
-	#ab__progress_bar::-moz-progress-bar {
+	.ab__progress_bar::-moz-progress-bar {
 		background-color: #F0AB00;
 		transition: width .4s cubic-bezier(0.45, 0.05, 0.55, 0.95);		
 	}
-	#ab__progress_text {
+	.ab__progress_text {
 		position: absolute;
 		right: 0;
 		bottom: 0;
@@ -158,52 +158,53 @@
 		font-size: 12px;
 	}
 	@media (min-width: 992px) {
-		#ab__progress {
+		.ab__progress {
 			margin-bottom: 32px;
 		}
-		#ab__progress_text {
+		.ab__progress_text {
 			left: 90%;
 		}
 	}
 	/*------------------------------------------------------------------
 		2.3 AB__Segments
 	------------------------------------------------------------------*/
-	#ab__segments .segment_list {
+	.ab__segments .segment_list {
 		list-style-type: none;
 	}
-	#ab__segments .segment_list li {
+	.ab__segments .segment_list li {
 		counter-increment: segment;
 		position: relative;
 		display: block;	
 		margin-bottom: 0;
 	}				
-	#ab__segments li:before,
-	#ab__segments .segment_icon {
+	.ab__segments li:before,
+	.ab__segments .segment_icon {
 		font-weight: 600;
 	}
-	#ab__segments .segment_name {
+	.ab__segments .segment_name {
+		font-weight: 600;
 		display: inline-block;
 		width: 90%;
 		padding-right: 15px;			
 	}
 	@media (min-width: 992px) {
-		#ab__segments {
+		.ab__segments {
 			margin-bottom: 16px;
 		}
-		#ab__segments .segment_list li {
+		.ab__segments .segment_list li {
 			margin-bottom: 16px;
 		}
 	}
 		/*------------------------------------------------------------------
 			2.3.1 Icons
 		------------------------------------------------------------------*/	
-		#ab__segments .segment.current .segment_name:before {
+		.ab__segments .segment.current .segment_name:before {
 			content: '\f0da';
 			font-family: 'Font Awesome 5 Free';
 			font-size: 16px;
 			margin-right: 4px;
 		}
-		#ab__segments .segment_icon {
+		.ab__segments .segment_icon {
 			width: 24px;
 			height: 24px;
 			font-size: 14px;
@@ -215,19 +216,19 @@
 			top: 50%;
 			transform: translateY(-50%);			
 		}
-		#ab__segments .segment_icon .fas,
-		#ab__segments .segment_icon .far {			
+		.ab__segments .segment_icon .fas,
+		.ab__segments .segment_icon .far {			
 			font-size: 24px;
 			position: absolute;
 			top: 50%;
 			left: 50%;
 			transform: translate(-50%, -50%);
 		}
-		#ab__segments .segment_questions {
+		.ab__segments .segment_questions {
 			position: relative;
 			top: 3px;
 		}
-		#ab__segments .segment_icon .fas.fa-check {
+		.ab__segments .segment_icon .fas.fa-check {
 			position: absolute;
 			z-index: 10;
 			top: 50%;
@@ -238,7 +239,7 @@
 			padding-bottom: 4px;			    
 		}
 		@media (min-width: 992px) {
-			#ab__segments .segment_icon {
+			.ab__segments .segment_icon {
 				left: 90%;
 			}
 		}
@@ -246,32 +247,32 @@
 			2.3.2 Progression styles
 		------------------------------------------------------------------*/	
 		/* Future segment */
-		#ab__segments li.segment.future .segment_name,
-		#ab__segments li.segment.future:before,
-		#ab__segments li.segment.future .segment_icon {
+		.ab__segments li.segment.future .segment_name,
+		.ab__segments li.segment.future:before,
+		.ab__segments li.segment.future .segment_icon {
 			color: #CCC;
 		}
 		/* Current/Completed segment */
-		#ab__segments li.segment.current .segment_name,
-		#ab__segments li.segment.current:before,
-		#ab__segments li.segment.current .segment_icon,		
-		#ab__segments li.segment.completed .segment_name,
-		#ab__segments li.segment.completed:before,
-		#ab__segments li.segment.completed .segment_icon {
+		.ab__segments li.segment.current .segment_name,
+		.ab__segments li.segment.current:before,
+		.ab__segments li.segment.current .segment_icon,		
+		.ab__segments li.segment.completed .segment_name,
+		.ab__segments li.segment.completed:before,
+		.ab__segments li.segment.completed .segment_icon {
 			color: #F0AB00;
 		}
 		/* Change icon based on segment status */
-		#ab__segments li.segment.future .fas.fa-comment-alt,
-		#ab__segments li.segment.future .fa-check,
-		#ab__segments li.segment.current .fa-check,
-		#ab__segments li.segment.current .fas.fa-comment-alt,
-		#ab__segments li.segment.completed .segment_questions {
+		.ab__segments li.segment.future .fas.fa-comment-alt,
+		.ab__segments li.segment.future .fa-check,
+		.ab__segments li.segment.current .fa-check,
+		.ab__segments li.segment.current .fas.fa-comment-alt,
+		.ab__segments li.segment.completed .segment_questions {
 			display: none;
 		}
 		@media (max-width: 991px) { 
-			#ab__segments .segment.current .segment_name:before,
-			#ab__segments li.segment.future,
-			#ab__segments li.segment.completed {
+			.ab__segments .segment.current .segment_name:before,
+			.ab__segments li.segment.future,
+			.ab__segments li.segment.completed {
 				display: none;
 			}
 		}
@@ -279,15 +280,15 @@
 	/*------------------------------------------------------------------
 		2.4 AB__Teaser
 	------------------------------------------------------------------*/
-	#ab__teaser h5 {
+	.ab__teaser h5 {
 		position: relative;
 		font-weight: 600;
 		color: #CCC;
 	}
-	#ab__teaser .dotted_line {
+	.ab__teaser .dotted_line {
 		width: 97%;
 	}
-	#ab__teaser .teaser_icon {
+	.ab__teaser .teaser_icon {
 		width: 24px;
 		height: 24px;
 		font-size: 14px;
@@ -299,12 +300,12 @@
 		top: 50%;
 		transform: translateY(-50%);
 	}
-	#ab__teaser .teaser_icon .far {
+	.ab__teaser .teaser_icon .far {
 		font-size: 24px;
 		color: #CCC;		
 	}
 	@media (max-width: 991px) { 
-		#ab__teaser {
+		.ab__teaser {
 			display: none;
 		}
 	}		
@@ -314,64 +315,64 @@
 	3.0 AB__Main
 
 ------------------------------------------------------------------*/
-#ab__main {
+.ab__main {
 	padding-top: 32px;
 }
-#ab__main .screen_counter {
+.ab__main .screen_counter {
 	color: #F0AB00;
 }
 @media (min-width: 992px) { 
-	#ab__main {
+	.ab__main {
 		padding-top: 88px;
 	}
 }
 	/*------------------------------------------------------------------
 		3.1 AB__Callout
 	------------------------------------------------------------------*/	
-	#ab__callout {
+	.ab__callout {
 		background-color: #fff;
 		border: 1px solid #CCC;
 		border-left: 5px solid #0078c9;
 		border-radius: 1px;
 	}
-	#ab__callout .col.ab__callout_thumbnail img {
+	.ab__callout .col.ab__callout_thumbnail img {
 		max-width: 82px;
 		margin: 0;
 	}
-	#ab__callout .col {
+	.ab__callout .col {
 		display: table-cell;
 		float: none;
 		vertical-align: middle;
 	}
 	@media (min-width: 992px) {
-		#ab__callout {
+		.ab__callout {
 			display: table;
 		}
-		#ab__callout .col {
+		.ab__callout .col {
 			display: table-cell;
 			float: none;
 			vertical-align: middle;
 		}	
-		#ab__callout .col.ab__callout_content {
+		.ab__callout .col.ab__callout_content {
 			text-align: left;
 		}
 	}
 	/*------------------------------------------------------------------
 		3.2 AB__User_Input
 	------------------------------------------------------------------*/		
-	#ab__user_input ul {
+	.ab__user_input ul {
 		float: left;
 		padding-left: 0;
 		margin-bottom: 0;
 	}
-	#ab__user_input .choice {
+	.ab__user_input .choice {
 		float: left;
 		font-size: 22px;
 		height: 70px;
 		line-height: 70px;
 		transition: 0.2s all cubic-bezier(0.45, 0.05, 0.55, 0.95);			
 	}
-	#ab__user_input .boolean {
+	.ab__user_input .boolean {
 		display: inline-block;
 		width: 175px;
 		background-color: #FFF;
@@ -382,15 +383,15 @@
 		margin-bottom: 0;
 		cursor: pointer;
 	}
-	#ab__user_input .boolean:hover,
-	#ab__user_input .boolean.selected {
+	.ab__user_input .boolean:hover,
+	.ab__user_input .boolean.selected {
 		color: #F0AB00;
 		border-color: #F0AB00;
 	}
-	#ab__user_input .boolean span:after {
+	.ab__user_input .boolean span:after {
 		width: 0;
 	}
-	#ab__user_input .boolean.selected span:after {
+	.ab__user_input .boolean.selected span:after {
 		content: '\f058';
 		font-family: 'Font Awesome 5 Free';
 		color: #F0AB00;
@@ -398,22 +399,22 @@
 		width: auto;
 		transition: 0.2s all cubic-bezier(0.45, 0.05, 0.55, 0.95);		
 	}		
-	#ab__user_input .boolean span {
+	.ab__user_input .boolean span {
 		display: block;
 	}
 	@media (max-width: 767px) {
-		#ab__user_input ul {
+		.ab__user_input ul {
 			float: none;
 			display: flex;
 			align-items: center;
 			align-content: center;
 			justify-content: space-between;
 		}
-		#ab__user_input ul li {
+		.ab__user_input ul li {
 			float: none;
 		    flex: 0 1 48%;
 		}
-		#ab__user_input .choice {
+		.ab__user_input .choice {
 			width: 50%;
 			margin-right: 0;
 		}
@@ -427,7 +428,7 @@
 	/*------------------------------------------------------------------
 		4.1 AB__Results_Visual
 	------------------------------------------------------------------*/
-	#ab__result #result_visual {
+	.ab__result .result_visual {
 		max-width: 219px; /* Half of @2x width */
 	}
 
