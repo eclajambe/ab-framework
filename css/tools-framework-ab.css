@@ -9,11 +9,14 @@
 		2.1 AB__Tool_Title
 		2.2 AB__Progress
 		2.3 AB__Segments
-			2.3.1 Icons
-			2.3.2 Progression styles
+			2.3.1 AB__Unsegmented
+			2.3.2 Icons
+			2.3.3 Progression styles
 	3.0 AB__Main
 		3.1 AB__Callout
 		3.2 AB__User_Input
+			3.2.1 Boolean
+			3.2.2 Checkboxes
 	4.0 Results page
 		4.1 AB__Results_Visual
 
@@ -196,7 +199,15 @@
 		}
 	}
 		/*------------------------------------------------------------------
-			2.3.1 Icons
+			2.3.1 AB__Segmented
+		------------------------------------------------------------------*/	
+		@media (min-width: 1200px) {
+			.ab__unsegmented {
+				width: 80%;
+			}
+		}
+		/*------------------------------------------------------------------
+			2.3.2 Icons
 		------------------------------------------------------------------*/	
 		.ab__segments .segment.current .segment_name:before {
 			content: '\f0da';
@@ -244,7 +255,7 @@
 			}
 		}
 		/*------------------------------------------------------------------
-			2.3.2 Progression styles
+			2.3.3 Progression styles
 		------------------------------------------------------------------*/	
 		/* Future segment */
 		.ab__segments li.segment.future .segment_name,
@@ -361,64 +372,86 @@
 		3.2 AB__User_Input
 	------------------------------------------------------------------*/		
 	.ab__user_input ul {
-		float: left;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		align-items: stretch;
+		align-content: flex-start;		
 		padding-left: 0;
 		margin-bottom: 0;
+		list-style: none;
+	}
+	.ab__user_input ul.choice_full_width .choice {
+		width: 100%;		
 	}
 	.ab__user_input .choice {
-		float: left;
+		position: relative;
 		font-size: 22px;
-		height: 70px;
-		line-height: 70px;
-		transition: 0.2s all cubic-bezier(0.45, 0.05, 0.55, 0.95);			
-	}
-	.ab__user_input .boolean {
-		display: inline-block;
-		width: 175px;
+		padding: 16px;	
 		background-color: #FFF;
 		border: 1px solid #CCC;
 		border-radius: 1px;
-		margin-right: 24px;
-		text-align: center;
-		margin-bottom: 0;
 		cursor: pointer;
+		transition: 0.1s border-color cubic-bezier(0.45, 0.05, 0.55, 0.95);
 	}
-	.ab__user_input .boolean:hover,
-	.ab__user_input .boolean.selected {
+	.ab__user_input .choice .centerer {
+		display: inline-block;
+	}
+	.ab__user_input ul.choice_flex_width .choice {
+		margin-right: 24px;	
+	}
+	/*------------------------------------------------------------------
+		3.2.1 Boolean
+	------------------------------------------------------------------*/		
+	.ab__user_input .boolean {
+		flex-basis: 200px;
+		text-align: center;
+	}
+	.ab__user_input .choice:hover {
+		border-color: #F0AB00;
+	}
+	.ab__user_input .choice.selected {
 		color: #F0AB00;
 		border-color: #F0AB00;
 	}
-	.ab__user_input .boolean span:after {
-		width: 0;
-	}
-	.ab__user_input .boolean.selected span:after {
-		content: '\f058';
+	.ab__user_input .choice:before {
+		padding-right: 4px;
+		animation: iconInLeft .1s;
+		-moz-animation: iconInLeft .1s; /* Firefox */
+		-webkit-animation: iconInLeft .1s; /* Safari and Chrome */		
+	}	
+	.ab__user_input .choice.selected:before {
+		content: '\f00c';
+		font-size: 16px;
 		font-family: 'Font Awesome 5 Free';
-		color: #F0AB00;
-		padding-left: 24px;
-		width: auto;
-		transition: 0.2s all cubic-bezier(0.45, 0.05, 0.55, 0.95);		
-	}		
-	.ab__user_input .boolean span {
-		display: block;
+		font-weight: 600;
+		color: #F0AB00;	
+	}	
+	.ab__user_input .choice.selected:after {
+		content: '';
+		position: absolute;
+		z-index: -1;		
+	}	
+	@keyframes iconInLeft
+	{
+		from {opacity: 0;} 
+		to {opacity: 100%;} 
 	}
-	@media (max-width: 767px) {
-		.ab__user_input ul {
-			float: none;
-			display: flex;
-			align-items: center;
-			align-content: center;
-			justify-content: space-between;
-		}
-		.ab__user_input ul li {
-			float: none;
-		    flex: 0 1 48%;
-		}
-		.ab__user_input .choice {
-			width: 50%;
-			margin-right: 0;
-		}
+	@-moz-keyframes iconInLeft
+	{
+		from {opacity: 0;} 
+		to {opacity: 100%;} 
 	}
+	@-webkit-keyframes iconInLeft
+	{
+		from {opacity: 0;} 
+		to {opacity: 100%;} 
+	}	
+	/*------------------------------------------------------------------
+		3.2.2 Checkboxes
+	------------------------------------------------------------------*/	
+
 
 /*------------------------------------------------------------------
 	
