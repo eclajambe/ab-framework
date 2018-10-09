@@ -19,6 +19,7 @@
 			3.2.2 Checkboxes
 	4.0 Results page
 		4.1 AB__Results_Visual
+	5.0 Loading screen
 
 
 ------------------------------------------------------------------*/	
@@ -465,6 +466,122 @@
 		max-width: 219px; /* Half of @2x width */
 	}
 
+
+/*------------------------------------------------------------------
+	
+	5.0 Loading screen
+
+------------------------------------------------------------------*/
+.ab__framework.ab_loading_screen {
+	height: 100vh;
+ 	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.spinner {
+	margin-top: -75px; /* Offset header height */
+	-webkit-animation: rotator 1.9s linear infinite;
+			animation: rotator 1.9s linear infinite;
+}
+
+@-webkit-keyframes rotator {
+  0% {
+	-webkit-transform: rotate(0deg);
+			transform: rotate(0deg);
+  }
+  100% {
+	-webkit-transform: rotate(260deg);
+			transform: rotate(260deg);
+  }
+}
+
+@keyframes rotator {
+  0% {
+	-webkit-transform: rotate(0deg);
+			transform: rotate(0deg);
+  }
+  100% {
+	-webkit-transform: rotate(260deg);
+			transform: rotate(260deg);
+  }
+}
+.path {
+	stroke-dasharray: 187;
+	stroke-dashoffset: 0;
+	-webkit-transform-origin: center;
+			transform-origin: center;
+	-webkit-animation: dash 1.9s ease-in-out infinite, colors 1.9s ease-in-out infinite;
+			animation: dash 1.9s ease-in-out infinite, colors 1.9s ease-in-out infinite;
+}
+
+@-webkit-keyframes colors {
+  0% {
+	stroke: #F0AB00;
+  }
+  25% {
+	stroke: #F0AB00;
+  }
+  50% {
+	stroke: #F0AB00;
+  }
+  75% {
+	stroke: #F0AB00;
+  }
+  100% {
+	stroke: #F0AB00;
+  }
+}
+
+@keyframes colors {
+  0% {
+	stroke: #F0AB00;
+  }
+  25% {
+	stroke: #F0AB00;
+  }
+  50% {
+	stroke: #F0AB00;
+  }
+  75% {
+	stroke: #F0AB00;
+  }
+  100% {
+	stroke: #F0AB00;
+  }
+}
+@-webkit-keyframes dash {
+  0% {
+	stroke-dashoffset: 187;
+  }
+  50% {
+	stroke-dashoffset: 31.1666666667;
+	-webkit-transform: rotate(230deg);
+			transform: rotate(230deg);
+  }
+  100% {
+	stroke-dashoffset: 187;
+	-webkit-transform: rotate(460deg);
+			transform: rotate(460deg);
+  }
+}
+@keyframes dash {
+  0% {
+	stroke-dashoffset: 187;
+  }
+  50% {
+	stroke-dashoffset: 31.1666666667;
+	-webkit-transform: rotate(230deg);
+			transform: rotate(230deg);
+  }
+  100% {
+	stroke-dashoffset: 187;
+	-webkit-transform: rotate(460deg);
+			transform: rotate(460deg);
+  }
+}
+
+
+}
 
 
 
