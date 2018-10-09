@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="219px" height="204px" viewBox="0 0 219 204" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>segmented-dial-1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.290659794 0.542737838 59.6411753 0.542737838 59.6411753 92 0.290659794 92"></polygon>
+    </defs>
+    <g id="HiFi" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="TEMAssessment_HiFi_4.0_ResultsPage_LG" transform="translate(-300.000000, -346.000000)">
+            <g id="page-[0v]">
+                <g id="content-[0v]" transform="translate(0.000000, 75.000000)">
+                    <g id="#user-results">
+                        <g id="segment-score" transform="translate(228.000000, 221.000000)">
+                            <g id="segmented-dial-1" transform="translate(72.000000, 50.000000)">
+                                <g id="dial">
+                                    <path d="M155.97131,24 L162,14.0567938 C128.699453,-4.32635967 90.668495,-4.69378298 57,13.0432329 L62.8447163,23.1344873 C91.097973,8.45493688 126.14412,7.74046936 155.97131,24" id="Fill-1" fill="#CCCCCC"></path>
+                                    <path d="M25.5092694,59.7234672 C34.2308771,45.0673762 46.2152983,33.5081391 60,25.4106736 L54.0825674,15 C20.6673937,34.5051689 1.07929584,67.421997 0,105.883103 L11.8903256,106 C12.4212494,90.1972011 16.8368905,74.2972969 25.5092694,59.7234672" id="Fill-3" fill="#CCCCCC"></path>
+                                    <polygon id="Fill-5" fill="#F1F1F1" points="59 24.9994059 54 15 58.9994735 25"></polygon>
+                                    <path d="M11.8418038,111.116988 L0,111 C0.310482533,149.50443 19.1716754,182.82612 52.0735094,203 L58,192.998479 C28.635183,174.775632 12.2001006,143.420451 11.8418038,111.116988" id="Fill-7" fill="#F0AB00"></path>
+                                    <polygon id="Fill-9" fill="#F0AB00" points="0.000628897857 106 0 106 12 106.189"></polygon>
+                                    <g id="Group-13" transform="translate(159.000000, 112.000000)">
+                                        <mask id="mask-2" fill="white">
+                                            <use xlink:href="#path-1"></use>
+                                        </mask>
+                                        <g id="Clip-12"></g>
+                                        <path d="M34.4288041,47.4770351 C25.7918969,62.1727919 13.9329278,73.7697649 0.290659794,81.9055486 L5.95787629,92.0000622 C39.1261237,72.3972243 58.5698351,39.3139 59.6411753,0.659602703 L47.9578763,0.542737838 C47.4951959,16.5650351 43.1145773,32.6992243 34.4288041,47.4770351" id="Fill-11" fill="#CCCCCC" mask="url(#mask-2)"></path>
+                                    </g>
+                                    <path d="M159,194 L164,204 L159,194 Z" id="Fill-14" fill="#F1F1F1"></path>
+                                    <path d="M207.291498,107.88425 L219,108 C218.69035,69.4955696 199.879706,36.1738803 167.066052,16 L161,26.2652071 C190.322656,44.3840652 206.794819,75.6334008 207.291498,107.88425" id="Fill-16" fill="#CCCCCC"></path>
+                                    <polygon id="Fill-18" fill="#FFFFFF" points="207 112 207 112 218.999365 112.187 219 112.187"></polygon>
+                                </g>
+                                <text id="1" font-family="BentonSans-Bold, BentonSans" font-size="100" font-weight="bold" line-spacing="100" fill="#F0AB00">
+                                    <tspan x="87" y="171">1</tspan>
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
