@@ -1,0 +1,26 @@
+.grid {
+    display: grid;
+    width: 50vw;
+    grid-template-columns: repeat(auto-fill, 10vw);
+    grid-auto-rows: 50vw;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    pointer-events: none;    
+}
+.grid {
+    position: absolute;
+    transform-origin: bottom;
+    transform: skewY(45deg);
+    grid-template-areas: 
+    ". . . . ."
+    "dots dots dots dots dots";    
+}
+.grid .dots {
+    transform: skewY(-45deg);
+    grid-area: dots;
+}
+.grid .dots .reverse-skew {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyBpZD0iVjMiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDcgNyI+PHRpdGxlPkFydGJvYXJkIDMgY29weTwvdGl0bGU+PGNpcmNsZSBjeD0iMSIgY3k9IjEiIHI9IjEiLz48L3N2Zz4="); 
+    background-size: 10px;    
+}
